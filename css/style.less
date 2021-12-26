@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    height: 100vh;
+}
+
+.main_header {
+    background-color: #009688;
+    height: 280px;
+    width: 100%;
+        .header_name {
+            display: grid;
+            justify-items: center;
+            color: white;
+                > h4 {
+                    padding: 20px 0;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                }
+                > h1 {
+                    margin-bottom: 40px;
+                    font-size: 40px;
+                    letter-spacing: 1.5px;
+                }
+                button {
+                    background-color: black;
+                    color: white;
+                    padding: 15px;
+                    border: none;
+                    font-size: 20px;
+                    font-weight: 900;
+                    letter-spacing: 1px;
+                        &:hover {
+                            background-color: #009688;
+                            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                        }
+                }
+        }
+    
+            i {
+                color: white;
+                display: inline-block;
+                font-size: 24px;
+                padding: 20px;
+              }
+}
+.container_info {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    grid-template-areas: 
+        'responsive standart_css design';
+        .responsive {
+            padding: 20px 0;
+            text-align: center;
+            grid-area: responsive;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        .standart_css {
+            padding: 20px 0;
+            text-align: center;
+            grid-area: standart_css;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        .design {
+            padding: 20px 0;
+            text-align: center;
+            grid-area: design;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        i {
+            font-size: 120px;
+            margin: 20px 0;
+            color: #009688;
+        }
+        p {
+            margin: 16px 0;
+        }
+}
+
