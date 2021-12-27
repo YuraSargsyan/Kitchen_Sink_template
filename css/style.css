@@ -346,3 +346,34 @@
 .cards_shadow .card p {
   padding: 10px 16px;
 }
+.tables {
+  margin: 15px;
+}
+.tables > h3 {
+  text-align: center;
+  padding: 10px;
+  font-size: 26px;
+}
+.tables > p {
+  text-align: center;
+  padding: 10px;
+}
+.tables table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.tables thead tr {
+  background-color: #009688;
+  color: white;
+}
+.tables thead tr th {
+  padding: 10px;
+  text-align: start;
+}
+.tables tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.tables tbody tr td {
+  padding: 8px;
+}
