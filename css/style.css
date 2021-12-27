@@ -474,3 +474,41 @@
 .forms_lists .lists .lists_form .list_bottom .steve:hover {
   background-color: #ddd;
 }
+.skill {
+  width: 100%;
+  margin: 15px;
+}
+.skill button {
+  padding: 8px 16px;
+  background-color: #009688;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  font-size: 14px;
+}
+.skill_bar {
+  height: 20px;
+  background-color: red;
+  margin-right: 15px;
+}
+.skill_per {
+  height: 20px;
+  background-color: green;
+  position: relative;
+  animation: fillbars 2.5s 1;
+}
+.slideshows {
+  margin: 15px;
+  text-align: center;
+}
+.slideshows img {
+  width: 80%;
+}
+@keyframes fillbars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
