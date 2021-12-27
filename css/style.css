@@ -314,3 +314,35 @@
   padding: 5px 16px;
   text-align: end;
 }
+.cards_shadow {
+  margin: 15px;
+}
+.cards_shadow > h3 {
+  text-align: center;
+  font-size: 22px;
+  padding: 16px 0;
+}
+.cards_shadow .card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  grid-template-areas: 'card1 card2 card3';
+}
+.cards_shadow .card .card1 {
+  grid-area: card1;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.cards_shadow .card .card2 {
+  grid-area: card2;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.cards_shadow .card .card3 {
+  grid-area: card3;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.cards_shadow .card img {
+  width: 100%;
+}
+.cards_shadow .card p {
+  padding: 10px 16px;
+}
