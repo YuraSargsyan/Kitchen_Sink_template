@@ -81,4 +81,247 @@
             margin: 16px 0;
         }
 }
+.container_colors {
+        margin: 15px;
+        h3 {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .color_classes {
+            margin-bottom: 30px;
+            color: white;
+            height: 40px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+                'red1 blue1 blue_grey1 teal1 yellow1 orange1';
+            .container_color {
+                padding: 15px;
+            }
+        .red {
+            grid-area: red1;
+            background-color: #f44336;
+            
+        }
+        .blue {
+            grid-area: blue1;
+            background-color: #2196F3;
+        }
+        .blue_grey {
+            grid-area: blue_grey1;
+            background-color: #607d8b;
+        }
+        .teal {
+            grid-area: teal1;
+            background-color: #009688;
+        }
+        .yellow {
+            grid-area: yellow1;
+            background-color: #ffeb3b;
+            color: black;
+        }
+        .orange {
+            grid-area: orange1;
+            background-color: #ff9800;
+            color: black;
+        }
+    }
+}
+.built_in_responsiveness {
+    margin: 15px;
+        h3 {
+            text-align: center;
+            font-size: 26px;
+        }
+        > p {
+            text-align: center;
+        }
+        .w3_half {
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:  
+                'w3_half1 w3_half2';
+            p {
+                padding: 10px;
+            }
+            .w3_half1 {
+                grid-area: w3_half1;
+                background-color: #2196F3;
+                color: white;
+            }
+            .w3_half2 {
+                grid-area: w3_half2;
+            }
+        }
+        .w3_third {
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:  
+                'w3_third1 w3_third2 w3_third3';
+            p {
+                padding: 10px;
+            }
+            .w3_third1 {
+                grid-area: w3_third1;
+                color: white;
+                background-color: #4CAF50;
+            }
+            .w3_third {
+                grid-area: w3_third2;
+            }
+            .w3_third {
+                grid-area: w3_third3;
+            }
+        }
+        .w3_quarter {
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:  
+                'w3_quarter1 w3_quarter2 w3_quarter3 w3_quarter4';
+            p {
+                padding: 10px;
+            }
+            .w3_quarter1 {
+                color: white;
+                background-color: #f44336;
+                grid-area: w3_quarter1;
+            } 
+            .w3_quarter2 {
+                grid-area: w3_quarter2;
+            }
+            .w3_quarter3 {
+                grid-area: w3_quarter3;
+            }
+            .w3_quarter4 {
+                grid-area: w3_quarter4;
+            }
+        }
+}
+.containers {
+    margin: 15px;
+        p {
+            padding: 7px 16px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 26px;
+        }
+        > p {
+            text-align: center;
+        }
+        .header {
+            height: 60px;
+            background-color: #607d8b;
+            color: white;
+            font-size: 24px;
+        }
+        .london {
+            padding: 20px 0;
+            h4 {
+                margin-left: 16px;
+                font-size: 26px;
+            }
+        }
+        .footer {
+            color: white;
+            height: 60px;
+            background-color: #607d8b;
+                > b {
+                    padding: 16px;
+                    color: rgb(184, 184, 184);
+                }
+        }
+}
+.color_themes {
+    margin: 15px;
+        > h3 {
+            text-align: center;
+            font-size: 26px;
+            padding: 15px 0;
+        }
+        > p {
+            text-align: center;
+        }
+        .container_themes {
+            gap: 15px;
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:  
+                'theme_indigo theme';
+                    .theme_indigo {
+                        grid-area: theme_indigo;
+                        border: 1px solid #ccc;
+                            > h4 {
+                                background-color: #3f51b5;
+                                padding: 10px 16px;
+                                color: white;
+                                font-size: 24px;
+                            }
+                            > h5 {
+                                padding: 8px 16px;
+                                color: #3f51b5;
+                                font-size: 24px;
+                            }
+                            b {
+                                padding: 16px ;
+                                font-size: 22px;
+                            } 
+                            p {
+                                padding: 16px;
+                                font-size: 18px;
+                            }
+                            hr {
+                                margin-bottom: 16px;
+                            }
+                            h6 {
+                                background-color: #3f51b5;
+                                color: white;
+                                font-size: 16px;
+                                padding: 5px 16px;
+                                text-align: end;
+                            }
+                    }
+                    .theme {
+                        grid-area: theme;
+                        border: 1px solid #ccc;
+                            > h4 {
+                                background-color: #009688;
+                                padding: 10px 16px;
+                                color: white;
+                                font-size: 24px;
+                            }
+                            > h5 {
+                                padding: 8px 16px;
+                                color: #009688;
+                                font-size: 24px;
+                            }
+                            b {
+                                padding: 16px ;
+                                font-size: 22px;
+                            } 
+                            p {
+                                padding: 16px;
+                                font-size: 18px;
+                            }
+                            hr {
+                                margin-bottom: 16px;
+                            }
+                            h6 {
+                                background-color: #009688;
+                                color: white;
+                                font-size: 16px;
+                                padding: 5px 16px;
+                                text-align: end;
+                            }
+                        }
+        }
+}
 
