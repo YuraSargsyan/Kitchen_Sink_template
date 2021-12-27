@@ -377,3 +377,100 @@
 .tables tbody tr td {
   padding: 8px;
 }
+.forms_lists {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  grid-template-areas: 'forms_header forms_header' 'input_form lists';
+}
+.forms_lists .forms_header {
+  grid-area: forms_header;
+  text-align: center;
+  padding: 8px 0;
+}
+.forms_lists .forms_header h3 {
+  padding-top: 20px;
+  font-size: 26px;
+}
+.forms_lists .input_form {
+  grid-area: input_form;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  grid-template-areas: 'container_form container_form' 'checkbox radio';
+}
+.forms_lists .input_form .container_form {
+  grid-area: container_form;
+  margin: 16px 16px 0 16px;
+}
+.forms_lists .input_form .container_form h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.forms_lists .input_form .container_form input {
+  width: 100%;
+  height: 28px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.forms_lists .input_form .container_form p {
+  margin-bottom: 12px;
+}
+.forms_lists .input_form .checkbox {
+  grid-area: checkbox;
+  margin: 8px 8px 8px 16px;
+}
+.forms_lists .input_form .checkbox .check {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+}
+.forms_lists .input_form .radio {
+  grid-area: radio;
+  margin: 8px 8px 8px 16px;
+}
+.forms_lists .input_form .radio .radio_icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+}
+.forms_lists .lists {
+  grid-area: lists;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.forms_lists .lists .lists_form {
+  margin: 16px;
+}
+.forms_lists .lists .lists_form h4 {
+  font-size: 24px;
+}
+.forms_lists .lists .lists_form ul {
+  list-style: none;
+}
+.forms_lists .lists .lists_form ul li {
+  padding: 8px 16px;
+}
+.forms_lists .lists .lists_form .list_top {
+  margin-bottom: 40px;
+}
+.forms_lists .lists .lists_form .list_bottom {
+  border: 1px solid #ddd;
+}
+.forms_lists .lists .lists_form .list_bottom .jill {
+  background-color: #009688;
+  color: white;
+}
+.forms_lists .lists .lists_form .list_bottom .eve:hover {
+  background-color: #ddd;
+}
+.forms_lists .lists .lists_form .list_bottom .adam:hover {
+  background-color: #ddd;
+}
+.forms_lists .lists .lists_form .list_bottom .steve:hover {
+  background-color: #ddd;
+}
