@@ -5,6 +5,7 @@
 
 .main_container {
     height: 100vh;
+    width: auto;
 }
 
 .main_header {
@@ -51,6 +52,7 @@
     margin: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 15px;
     grid-template-areas: 
         'responsive standart_css design';
@@ -532,15 +534,99 @@
             width: 80%;
         }
 }
+.navigation {
+    overflow: hidden;
+    background-color: #009688;
+        a {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #009688;
+        a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
+.footer2 {
+    background-color: #01554d;
+    color: white;
+    width: 100%;
+    padding-bottom: 8px;
+        h3 {
+            margin: 15px;
+            padding-top: 16px;
+        }
+        p {
+            margin: 15px;
+                a {
+                    color: white;
+                }
+                .reference {
+                    display: inline-block;
+                    padding: 8px 16px;
+                    margin-left: 8px;
+                    background-color: #009688;
+                        &:hover {
+                            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                        }
+                }
+        }
 
-
-
-
-
-
-
-
+}
 
 @keyframes fillbars {
     from {
@@ -548,5 +634,82 @@
     }
     to {
         width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container_info {
+        min-width: 600px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'responsive'
+            'standart_css'
+            'design';
+    }
+    .container_colors {
+        .color_classes {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                'red1'
+                'blue1'
+                'blue_grey1'
+                'teal1'
+                'yellow1'
+                'orange1';
+        }
+        margin-bottom: 260px;
+    }
+    .built_in_responsiveness {
+        .w3_half {
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr 1fr;
+            grid-template-areas: 
+                'w3_half1'
+                'w3_half2';
+        }
+        .w3_third {
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr 1fr 1fr;
+            grid-template-areas: 
+                'w3_third1'
+                'w3_third2'
+                'w3_third3';
+        }
+        .w3_quarter {
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                'w3_quarter1'
+                'w3_quarter2'
+                'w3_quarter3'
+                'w3_quarter4';
+        }
+    }
+    .color_themes {
+        .container_themes {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                'theme_indigo'
+                'theme';
+        }
+    }
+    .cards_shadow {
+        .card {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+                'card1'
+                'card2'
+                'card3';
+        }
+    }
+    .forms_lists {
+        grid-template-columns: 1fr;
+        grid-template-rows: 7% 1fr 1fr;
+        grid-template-areas: 
+            'forms_header'
+            'input_form'
+            'lists';
     }
 }
